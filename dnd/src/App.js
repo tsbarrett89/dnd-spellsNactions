@@ -8,6 +8,7 @@ import Navigation from './components/Navigation';
 import SpellData from './data/SpellData';
 import SpellGrid from './components/SpellGrid';
 import CharacterGrid from './components/CharacterGrid';
+import { AppStyled } from './styling';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   }
 
   return (
-    <div>
+    <AppStyled>
       <OptionsContext.Provider value={{spells, addOption}}>
         <CharacterContext.Provider value={{ characterOptions }}>
           <Navigation />
@@ -36,7 +37,7 @@ function App() {
             
         </CharacterContext.Provider>
       </OptionsContext.Provider>
-    </div>
+    </AppStyled>
   );
 }
 

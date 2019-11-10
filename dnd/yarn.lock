@@ -8232,6 +8232,11 @@ react-scripts@3.2.0:
   optionalDependencies:
     fsevents "2.0.7"
 
+react-style-reset@^1.2.14:
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/react-style-reset/-/react-style-reset-1.2.14.tgz#bd940567f6f6ee06ec8ac9df94fd0b318d5e6dce"
+  integrity sha512-NJfqVirsnCTSshPukUwFz6KTkgSTKVRtLqR2RRMJjCX0fUEukcaExttZwyavcY/zl/NFW1V7G3EtIQ0CYNBCtQ==
+
 react@^16.11.0:
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.11.0.tgz#d294545fe62299ccee83363599bf904e4a07fdbb"

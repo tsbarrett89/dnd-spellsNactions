@@ -1,15 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+
+import { NavBar, Links } from '../styling'
 
 const Navigation = () => {
 
     return(
-        <nav>
-            <div>      
-                    <NavLink to='/'>Options</NavLink>
-                    <NavLink to='/character'>Character</NavLink>
-            </div>
-        </nav>
+        <NavBar>      
+            <Links to='/'>Options</Links>
+            <Links to='/character'>Character</Links>
+        </NavBar>
     )
 }
 
