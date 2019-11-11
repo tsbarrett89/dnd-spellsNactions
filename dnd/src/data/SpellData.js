@@ -224,5 +224,212 @@ export default [
         spell: ["You and up to eight willing creaures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age.", "Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut-something that can happen only when an effect specifically states that it does-your sould and body are seperated, killing you instantly.", "Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting the spell, your body and possissions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a seperate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it", " The spell might also end early for you or one of your companions. A successful dispel magic spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.", "If you are returned to your body prematurely, your companions remain in their astral forms and must find thier own way back to their bodies, usually by dropping to 0 hit points."],
         higherLevel: '',
         classes: ['']
+    },
+    {
+        name: 'Augury',
+        school: 'divination',
+        ritual: true,
+        level: '2nd',
+        castingTime: '1 minute',
+        range: 'Self',
+        components: 'V, S, M (Specially marked sticks, bones, or similar tokens worth at least 25 gp)',
+        duration: 'Instantaneous',
+        spell: ["By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or emploing some other divinging tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:","Weal, for good results", "Woe, for bad results", "Weal and woe, for both good and bad results", "Nothing, for results that aren't especially good or bad", "The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.", "If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Aura of Life',
+        school: 'abjuration',
+        ritual: false,
+        level: '4th',
+        castingTime: '1 action',
+        range: 'Self (30-foot radius)',
+        components: 'V',
+        duration: 'Concentration, up to 10 minutes',
+        spell: ["Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Aura of Purity',
+        school: 'abjuration',
+        ritual: false,
+        level: '4th',
+        castingTime: '1 action',
+        range: 'Self (30-foot radius)',
+        components: 'V',
+        duration: 'Concentration, up to 10 minutes',
+        spell: ["Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: blinded, charmed, deafened, frightened, paralyzed, poisoned, and stunned."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Aura of Vitality',
+        school: 'evocation',
+        ritual: false,
+        level: '3rd',
+        castingTime: '1 action',
+        range: 'Self(30-foot radius)',
+        components: 'V',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Awaken',
+        school: 'transmutation',
+        ritual: false,
+        level: '5th',
+        castingTime: '8 hours',
+        range: 'Touch',
+        components: 'V, S, M (an agate worth at least 1,000 gp, which the spell consumes)',
+        duration: 'Instantaneous',
+        spell: ["After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast of plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your DM chooses statistics for the awakened shrub or the awakened tree.", "The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed."],
+        higherLevel: '',
+        classes: ['']
+    }
+    {
+        name: 'Bane',
+        school: 'enchantment',
+        ritual: false,
+        level: '1st',
+        castingTime: '1 action',
+        range: '30 feet',
+        components: 'V, S, M (a drop of blood)',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw."],
+        higherLevel: "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+        classes: ['']
+    },
+    {
+        name: 'Banishing Smite',
+        school: 'abjuration',
+        ritual: false,
+        level: '5th',
+        castingTime: '1 bonus action',
+        range: 'Self',
+        components: 'V',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is incapacitated. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space if occupied."],
+        higherLevel: '',
+        classes: ['']
+    }
+    {
+        name: 'Banishment',
+        school: 'abjuration',
+        ritual: false,
+        level: '4th',
+        castingTime: '1 action',
+        range: '60 feet',
+        components: 'V, S, M (an item distasteful to the target)',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.", "If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."],
+        higherLevel: "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.",
+        classes: ['']
+    }
+    {
+        name: 'Barkskin',
+        school: 'transmutation',
+        ritual: false,
+        level: '2nd',
+        castingTime: '1 action',
+        range: 'Touch',
+        components: 'V, S, M (a handful of oak bark)',
+        duration: 'Concentration, up to 1 hour',
+        spell: ["You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."],
+        higherLevel: '',
+        classes: ['']
+    }
+    {
+        name: 'Beacon of Hope',
+        school: 'abjuration',
+        ritual: false,
+        level: '3rd',
+        castingTime: '1 action',
+        range: '30 feet',
+        components: 'V, S',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["This spell bestows hope and vitality. Choose any number of cretures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Beast Sense',
+        school: 'divination',
+        ritual: true,
+        level: '2nd',
+        castingTime: '1 action',
+        range: 'Touch',
+        components: 'S',
+        duration: 'Concentration, up to 1 hour',
+        spell: ["You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings."],
+        higherLevel:'',
+        classes: ['']
+    }
+    {
+        name: 'Bestow Curse',
+        school: 'necromancy',
+        ritual: false,
+        level: '3rd',
+        castingTime: '1 action',
+        range: 'Touch',
+        components: 'V, S',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:", "Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.", "While cursed, the target has disadvantage on attack rolls against you.", "While cursed, the target has disadvantage on attack rolls against you.", "While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.", "While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.", "A remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."],
+        higherLevel: "If you cast this spell using a spellslot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.",
+        classes: ['']
+    },
+    {
+        name: "Bigby's Hand",
+        school: 'evocation',
+        ritual: false,
+        level: '5th',
+        castingTime: '1 action',
+        range: '120 feet',
+        components: 'V, S, M (an eggshell and a snakeskin glove)',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.", "The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has Strength of 26(+8) and a Dexterity of 10(+0). The hand doesn't fill its space.", "When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.", "Clenched Fist. The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your games statistics. On a hit, the target takes 4d8 force damage.", "Forceful Hand. The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it.", "Grasping Hand. The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting modifier.", "Interposing Hand. The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target."],
+        higherLevel: "When you cast the spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for each slot level above 5th.",
+        classes: ['']
+    },{
+        name: 'Blade Barrier',
+        school: 'evocation',
+        ritual: false,
+        level: '6th',
+        castingTime: '1 action',
+        range: '90 feet',
+        components: 'V, S',
+        duration: 'Concentration, up to 10 minutes',
+        spell: ["You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.", "When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage."],
+        higherLevel: '',
+        classes: ['']
+    }
+    {
+        name: ''
+        school:
+        ritual:
+        level:
+        castingTime:
+        range:
+        components:
+        duration:
+        spell:
+        higherLevel:
+        classes:
+    }
+    {
+        name:
+        school:
+        ritual:
+        level:
+        castingTime:
+        range:
+        components:
+        duration:
+        spell:
+        higherLevel:
+        classes:
     }
 ]
