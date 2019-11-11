@@ -289,7 +289,7 @@ export default [
         spell: ["After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast of plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your DM chooses statistics for the awakened shrub or the awakened tree.", "The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed."],
         higherLevel: '',
         classes: ['']
-    }
+    },
     {
         name: 'Bane',
         school: 'enchantment',
@@ -315,7 +315,7 @@ export default [
         spell: ["The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is incapacitated. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space if occupied."],
         higherLevel: '',
         classes: ['']
-    }
+    },
     {
         name: 'Banishment',
         school: 'abjuration',
@@ -328,7 +328,7 @@ export default [
         spell: ["You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.", "If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."],
         higherLevel: "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.",
         classes: ['']
-    }
+    },
     {
         name: 'Barkskin',
         school: 'transmutation',
@@ -341,7 +341,7 @@ export default [
         spell: ["You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."],
         higherLevel: '',
         classes: ['']
-    }
+    },
     {
         name: 'Beacon of Hope',
         school: 'abjuration',
@@ -367,7 +367,7 @@ export default [
         spell: ["You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings."],
         higherLevel:'',
         classes: ['']
-    }
+    },
     {
         name: 'Bestow Curse',
         school: 'necromancy',
@@ -393,7 +393,8 @@ export default [
         spell: ["You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.", "The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has Strength of 26(+8) and a Dexterity of 10(+0). The hand doesn't fill its space.", "When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.", "Clenched Fist. The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your games statistics. On a hit, the target takes 4d8 force damage.", "Forceful Hand. The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it.", "Grasping Hand. The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting modifier.", "Interposing Hand. The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target."],
         higherLevel: "When you cast the spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for each slot level above 5th.",
         classes: ['']
-    },{
+    },
+    {
         name: 'Blade Barrier',
         school: 'evocation',
         ritual: false,
@@ -405,31 +406,148 @@ export default [
         spell: ["You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.", "When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage."],
         higherLevel: '',
         classes: ['']
-    }
+    },
     {
-        name: ''
-        school:
-        ritual:
-        level:
-        castingTime:
-        range:
-        components:
-        duration:
-        spell:
-        higherLevel:
-        classes:
-    }
+        name: 'Blade Ward',
+        school: 'abjuration',
+        ritual: false,
+        level: 'cantrip',
+        castingTime: '1 action',
+        range: 'Self',
+        components: 'V, S',
+        duration: '1 round',
+        spell: ["You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."],
+        higherLevel: '',
+        classes: ['']
+    },
     {
-        name:
-        school:
-        ritual:
-        level:
-        castingTime:
-        range:
-        components:
-        duration:
-        spell:
-        higherLevel:
-        classes:
+        name: 'Bless',
+        school: 'enchantment',
+        ritual: false,
+        level: '1st',
+        castingTime: '1 action',
+        range: '30 feet',
+        components: 'V, S, M (a sprinkling of holy water)',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw."],
+        higherLevel: "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+        classes: ['']
+    },
+    {
+        name: 'Blight',
+        school: 'necromancy',
+        ritual: false,
+        level: '4th',
+        castingTime: '1 action',
+        range: '30 feet',
+        components: 'V, S',
+        duration: 'Instantaneous',
+        spell: ["Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.", "If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.", "If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies."],
+        higherLevel: "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+        classes: ['']
+    },
+    {
+        name: 'Blinding Smite',
+        school: 'evocation',
+        ritual: false,
+        level: '3rd',
+        castingTime: '1 bonus action',
+        range: 'Self',
+        components: 'V',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.", "A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Blindness/Deafness',
+        school: 'necromancy',
+        ritual: false,
+        level: '2nd',
+        castingTime: '1 action',
+        range: '30 feet',
+        components: 'V',
+        duration: '1 minute',
+        spell: ["You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends."],
+        higherLevel: "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+        classes: ['']
+    },
+    {
+        name: 'Blink',
+        school: 'transmutation',
+        ritual: false,
+        level: '3rd',
+        castingTime: '1 action',
+        range: 'Self',
+        components: 'V, S',
+        duration: '1 minute',
+        spell: ["Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the sace you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.", "While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Blur',
+        school: 'illusion',
+        ritual: false,
+        level: '2nd',
+        castingTime: '1 action',
+        range: 'Self',
+        components: 'V',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight."],
+        higherLevel: '',
+        classes: ['']
+    },
+    {
+        name: 'Branding Smite',
+        school: 'evocation',
+        ritual: false,
+        level: '2nd',
+        castingTime: '1 bonus action',
+        range: 'Self',
+        components: 'V',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends."],
+        higherLevel: "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.",
+        classes: ['']
+    },
+    {
+        name: 'Burning Hands',
+        school: 'evocation',
+        ritual: false,
+        level: '1st',
+        castingTime: '1 action',
+        range: 'Self (15-foot cone)',
+        components: 'V, S',
+        duration: 'Instantaneous',
+        spell: ["As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.", "The fire ignites any flammable objects in the area that aren't being worn or carried."],
+        higherLevel: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+        classes: ['']
+    },
+    {
+        name: 'Call Lightning',
+        school: 'conjuration',
+        ritual: false,
+        level: '3rd',
+        castingTime: '1 action',
+        range: '120 feet',
+        components: 'V, S',
+        duration: 'Concentration, up to 10 minutes',
+        spell: ["A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).", "When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turn until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.", "If you are outdoors in a stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10."],
+        higherLevel: "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.",
+        classes: ['']
     }
+    // {
+    //     name:
+    //     school:
+    //     ritual:
+    //     level:
+    //     castingTime:
+    //     range:
+    //     components:
+    //     duration:
+    //     spell:
+    //     higherLevel: "When you cast this spell using a spell slot of 2nd level or higher,"
+    //     classes:
+    // }
 ]
