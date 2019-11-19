@@ -8,7 +8,11 @@ const SpellCard = props => {
     return (
         <SpellCardStyled>
             <h3>{props.spell.name}</h3>
-            <SpellLevel>{props.spell.level} level {props.spell.school}</SpellLevel>
+            {props.spell.level.includes('cantrip') ? 
+                (<SpellLevel>{props.spell.school} {props.spell.level}</SpellLevel>) :
+                (<SpellLevel>{props.spell.level} level {props.spell.school}</SpellLevel>)
+            }
+            
             <SpellCardDataStyled>
                 <h5>Casting Time:</h5>
                 <p>{props.spell.castingTime}</p>
@@ -30,6 +34,14 @@ const SpellCard = props => {
                 <p key={index}>{spell}</p>
             ))}
             </SpellEffect>
+            <div>
+                {props.spell.higherLevel.length > 1 &&
+                    <div>
+                        <h5>At Higher Levels:</h5>
+                        <p>{props.spell.higherLevel}</p>
+                    </div>
+            }
+            </div>
             <SpellButtonStyled onClick={() => props.addOption(props.spell)}>Add to Character Sheet</SpellButtonStyled>
         </SpellCardStyled>
     )

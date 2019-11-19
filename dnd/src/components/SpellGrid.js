@@ -37,6 +37,7 @@ const SpellGrid = () => {
                     <option value="Wizard">Wizard</option>        
                 </select>
                 <select name="levelSelector" onChange={handleLevelChanges}>
+                    <option value=''>All</option>
                     <option value='cantrip'>Cantrip</option>
                     <option value='1st'>1st</option>
                     <option value='2nd'>2nd</option>
