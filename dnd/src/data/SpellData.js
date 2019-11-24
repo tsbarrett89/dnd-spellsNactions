@@ -1381,6 +1381,71 @@ export default [
         spell: ["You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.", "While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as 'Attack that creature,' 'Run over there,' or 'Fetch that object.' If the creature completes the order and doesn't receive further direction from you, if defends and preserves itself to the best of its ability.", "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.", "Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."],
         higherLevel: "When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.",
         classes: ['']
+    },
+    {
+        name: 'Dominate Person',
+        school: 'enchantment',
+        ritual: false,
+        level: '5th',
+        castingTime: '1 action',
+        range: '60 feet',
+        components: 'V, S',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving thorw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.", "While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does it best to obey. You can specify a simple and general course of action, such as 'Attack that creature,' 'Run over there,' or 'Fetch that object.' If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.","You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to se a reaction, but this requires you to use you own reaction as well.", "Each time the target takes damage, it makes a new Wisdom sabing throw against the spell. If the saving throw succeeds, the spell ends."],
+        higherLevel: "When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.",
+        classes: ['']
+    },
+    {
+        name: "Drawmij's Instant Summons",
+        school: 'conjuration',
+        ritual: true,
+        level: '6th',
+        castingTime: '1 minute',
+        range: 'Touch',
+        components: 'V, S, M (a sapphire worth 1,000 gp)',
+        duration: 'Until dispelled',
+        spell: ["You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibility inscribes the name of the item on the sapphire you use as the material coponent. Each time you cast this spell, you must use a different sapphire.", "At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends.", "If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment.", "Dispel magic or a similar effect successfully applied to the sapphire ends thes spell's effect."],
+        higherLevel: '',
+        classes:['']
+    },
+    {
+        name: 'Dream',
+        school: 'illusion',
+        ritual: false,
+        level: '5th',
+        castingTime: '1 minute',
+        range: 'Special',
+        components: 'V, S, M (a handful of sand, a dab of ink, and a writing quill plucked from a sleeping bird)',
+        duration: '8 hours',
+        spell: ["This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.", "If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams.", "You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words, and then the target must make a Wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target's sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage.", "If you have a body part, lock of hair, clipping from a nail, or similar portion of the target's body, the target makes its saving throw with disadvantage."],
+        higherLevel: "",
+        classes: ['']
+    },
+    {
+        name: 'Druidcraft',
+        school: 'Transmutation',
+        ritual: false,
+        level: 'cantrip',
+        castingTime: '1 action',
+        range: '30 feet',
+        components: 'V, S',
+        duration: 'Instantaneous',
+        spell: ["Whispering to the spirits of nature, you create one of the following effects within range:", "You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a goldne orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.", "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.", "You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.", "You instantly light or snuff out a candle, a torch, or a small campfire."],
+        higherLevel: "",
+        classes:['']
+    },
+    {
+        name: 'Earthquake',
+        school: 'evocation',
+        ritual: false,
+        level: '8th',
+        castingTime: '1 action',
+        range: '500 feet',
+        components: 'V, S, M (a pinch of dirt, a piece of rock, and a lump of clay)',
+        duration: 'Concentration, up to 1 minute',
+        spell: ["You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.", "The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a Constitution saving throw. On a failed save, the creature's concentration is broken.", "When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked prone.", "This spell can have additional effects depending on the terrain in the area, as determined by the DM.", "Fissures. Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the DM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw of fall in. A creature that successfully saves moves with the fissure's edge as it opens.", "A fissure that opens beneath a structure causes it to automatically collapse (seebelow).", "Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nerby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried."],
+        higherLevel: "",
+        classes:['']
     }
     // {
     //     name:
